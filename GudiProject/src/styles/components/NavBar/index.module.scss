@@ -1,0 +1,35 @@
+@import "../../global.scss";
+
+.header {
+  height: $header-height;
+  background-color: $color-white;
+  position: fixed;
+  z-index: 1000;
+  width: 100%;
+  @include text-extra-small($color-blue-ligth);
+  padding: 0 $spacing-md;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(md) {
+    padding: 0 $spacing-lg;
+  }
+  transition: 0.3s ease padding;
+}
+
+.box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 30%;
+}
+
+.nav {
+  display: flex;
+  gap: $gap-lg;
+  margin-right: $gap-lg;
+
+  .nav_item {
+   @include text-extra-small($color-blue-ligth)
+  }
+}
