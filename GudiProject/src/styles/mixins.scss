@@ -1,0 +1,35 @@
+@import "./variable.scss";
+
+@mixin title-large {
+  font-size: 2.2em;
+  font-weight: bold;
+  font-family: "Argentum Sans ExtraBold", sans-serif;
+  opacity: 1;
+  color: $color-blue-ligth;
+}
+
+@mixin title-midle($color) {
+  font-size: 2em;
+  font-weight: bold;
+  font-family: "Argentum Sans", sans-serif;
+  color: $color;
+}
+
+@mixin title-small($color) {
+  font-size: 1em;
+  font-family: "Argentum Sans Regular", sans-serif;
+  color: $color;
+}
+
+@mixin text-small($color) {
+  font-size: 0.9em;
+  font-family: "Argentum Sans Regular", sans-serif;
+  color: $color;
+}
+
+@mixin text-extra-small($color) {
+  font-size: 0.8em;
+  font-family: "Argentum Sans Medium", sans-serif;
+  color: $color;
+}
+
