@@ -11,25 +11,46 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @include breakpoint(md) {
-    padding: 0 $spacing-lg;
-  }
   transition: 0.3s ease padding;
-}
+  .logo {
+    @include device(xs) {
+      margin-top: $gap-md;
+    }
+  }
+  .box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 30%;
+    margin-right: $gap-md;
+    @include device(m) {
+      width: 40%;
+      margin-right: 80px;
+    }
+    @include device(s) {
+      width: 50%;
+      margin-right: 80px;
+    }
+    @include device(xs) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      font-size: 9px;
+    }
+  }
 
-.box {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 30%;
-}
+  .nav {
+    display: flex;
+    gap: $gap-lg;
+    margin-right: $gap-lg;
 
-.nav {
-  display: flex;
-  gap: $gap-lg;
-  margin-right: $gap-lg;
-
-  .nav_item {
-   @include text-extra-small($color-blue-ligth)
+    .nav_item {
+      @include text-extra-small($color-blue-ligth);
+    }
+  }
+  @include device(xs) {
+    display: flex;
+    flex-direction: column;
   }
 }
