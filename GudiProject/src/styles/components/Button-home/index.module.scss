@@ -1,6 +1,0 @@
-@import "../../variable.scss";
-@import "../../mixins.scss";
-
-.button {
-  @include buttonHome($bg-gradient-btn, $color-white, none, bold);
-}
