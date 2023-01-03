@@ -1,6 +1,28 @@
+//Colors
 $color-blue-ligth: #005bd5;
 $color-blue-dark: #002e6b;
 $color-grey-text-1: #8b8b8b;
 $color-grey-text-2: #afb3b8;
 $color-grey-ultraligth: #eeeeee;
-$gradiente-blue: transparent linear-gradient(100deg, #005bd5 0%, #002e6b 100%);
+$color-white: #fff;
+$bg-gradient-blue: transparent linear-gradient(100deg, #005bd5 0%, #002e6b 100%);
+$bg-gradient-btn:#005BD5 0% 0% no-repeat padding-box;
+
+// Heigth
+$header-height: 70px;
+
+//Sizes
+$s: 37.5rem;
+$md: 48rem;
+$lg: 64rem;
+$xl: 75rem;
+
+//Spacing
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 32px;
+
+//Gap
+$gap-sm: 16px;
+$gap-md: 20px;
+$gap-lg: 35px;
