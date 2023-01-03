@@ -19,6 +19,9 @@
     font-family: "Argentum Sans ExtraBold", sans-serif;
     opacity: 1;
     color: $color-blue-ligth;
+  } @else if $size == xs {
+    font-size: 1.25rem;
+    background-color: black;
   }
 }
 
