@@ -1,0 +1,6 @@
+@import "../../styles/variable.scss";
+@import "../../styles/mixins.scss";
+
+.button {
+  @include buttonHome($bg-gradient-btn, $color-white, none, "Argentum Sans ExtraBold", bold);
+}
