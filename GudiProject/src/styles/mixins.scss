@@ -121,6 +121,32 @@
   }
 }
 
+@mixin boxInfo($background) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $background;
+  width: 180px;
+  height: 165px;
+  gap: $gap-sm;
+  cursor: pointer;
+}
+
+@mixin boxInfo-md($background) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  background-color: $background;
+  width: 120px;
+  height: 85px;
+  gap: $gap-sm;
+  cursor: pointer;                                                                                        
+}
+
 //Breakpoints
 @mixin device($size) {
   @if $size == l {

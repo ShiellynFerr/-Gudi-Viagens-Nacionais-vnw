@@ -1,0 +1,136 @@
+@import "../../styles/global.scss";
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 80px;
+  height: 100%;
+  .content_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 80px 0px 30px 0px;
+
+    h3 {
+      width: 300px;
+      @include title-midle($color-grey-text-1);
+
+      @media (max-width:300px) {
+        @include title-small($color-grey-text-1);
+      }
+    }
+    span {
+      margin-left: 10px;
+      @include text-extra-small($color-grey-text-2);
+    }
+  }
+
+  .section_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $gap-sm;
+
+    figure {
+      margin-bottom: 10px; 
+      @media (max-width: 660px) {
+        margin-bottom: 0px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-direction: column;
+      gap: 0px;
+    }
+  }
+  img {
+    @media (max-width: 900px) {
+      width: 200px;
+      height: 150px;
+    }
+    @media (max-width: 660px) {
+      width: 100%;
+    }
+  }
+}
+
+.box_info {
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: $gap-sm;
+  padding: 0px 10px 40px 0px;
+
+  .box_icon_grey {
+    @include boxInfo($color-grey-ultraligth);
+    @include text-small($color-blue-ligth);
+
+    img {
+      width: 62px;
+      height: 59px;
+
+      @media (max-width: 900px) {
+        width: 50px;
+        height: 62px;
+      }
+      @media (max-width: 660px) {
+        width: 30px;
+        height: 32px;
+      }
+    }
+    &:hover {
+      transform: scale(0.95);
+      transition: all 0.3s;
+    }
+
+    @media (max-width: 660px) {
+      @include boxInfo-md($color-grey-ultraligth);
+    }
+  }
+  .box_icon_blue {
+    @include boxInfo($color-blue-ligth);
+    @include text-small($color-white);
+
+    img {
+      width: 62px;
+      height: 59px;
+
+      @media (max-width: 900px) {
+        width: 50px;
+        height: 62px;
+      }
+      @media (max-width: 660px) {
+        width: 30px;
+        height: 32px;
+      }
+    }
+    .title_city {
+      width: 120px;
+      @media (max-width:660px) {
+        margin-left: 10px;
+      }
+    }
+    &:hover {
+      transform: scale(0.95);
+      transition: all 0.3s;
+    }
+    @media (max-width: 660px) {
+      @include boxInfo-md($color-blue-ligth);
+    }
+    
+  }
+  @media (max-width:660px) {
+    gap: 3px;
+    @include text-extra-small($color-white);
+  }
+  @media (max-width: 500px) {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 10px;
+  
+  }
+}

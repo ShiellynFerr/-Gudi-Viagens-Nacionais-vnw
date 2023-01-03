@@ -1,11 +1,7 @@
 import styles from "./index.module.scss";
 
-interface iPropsImg {
-  image: string;
-}
 
 const ImageHover = () => {
-  // const { image } = props;
   return (
       <div className={styles.container}>
         <div className={styles.Box_img}>
