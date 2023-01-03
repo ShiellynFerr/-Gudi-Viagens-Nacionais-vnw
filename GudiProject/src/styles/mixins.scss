@@ -1,27 +1,26 @@
 @import "./variable.scss";
 
-@mixin title-large($size) {
+@mixin title-large($size, $color: $color-blue-ligth) {
   @if $size == l {
     font-size: 2.188rem;
     font-weight: bold;
     font-family: "Argentum Sans ExtraBold", sans-serif;
     opacity: 1;
-    color: $color-blue-ligth;
+    color: $color;
   } @else if $size == m {
     font-size: 1.875rem;
     font-weight: bold;
     font-family: "Argentum Sans ExtraBold", sans-serif;
     opacity: 1;
-    color: $color-blue-ligth;
+    color: $color;
   } @else if $size == s {
     font-size: 1.563rem;
     font-weight: bold;
     font-family: "Argentum Sans ExtraBold", sans-serif;
     opacity: 1;
-    color: $color-blue-ligth;
+    color: $color;
   } @else if $size == xs {
     font-size: 1.25rem;
-    background-color: black;
   }
 }
 
@@ -41,13 +40,23 @@
 @mixin text-small($color) {
   font-size: 0.875rem;
   font-family: "Argentum Sans Regular", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.29px;
   color: $color;
 }
 
 @mixin text-extra-small($color) {
-  font-size: 0.75;
+  font-size: 0.75rem;
   font-family: "Argentum Sans Medium", sans-serif;
   color: $color;
+}
+
+@mixin title-extra-small($color: $color-white) {
+  font-family: "Argentum Sans Regular", sans-serif;
+  font-size: 0.625rem;
+  color: $color;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 @mixin buttonText {
@@ -55,12 +64,18 @@
   text-transform: uppercase;
 }
 
-@mixin buttonHome($background: $bg-gradient-btn, $color, $border, $weight) {
+@mixin buttonHome(
+  $background: $bg-gradient-btn,
+  $color,
+  $border,
+  $fontFamily,
+  $weight
+) {
   width: 100px;
   height: 30px;
   border-radius: 15px;
   background: $background;
-  font-family: "Argentum Sans ExtraBold", sans-serif;
+  font-family: $fontFamily;
   color: $color;
   border: $border;
   font-weight: $weight;
@@ -72,6 +87,25 @@
     height: 30px;
     font-size: 0.438rem;
   }
+}
+
+@mixin buttonState {
+  width: 200px;
+  height: 35px;
+  position: absolute;
+  left: 60px;
+  bottom: 100px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  background-color: transparent;
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  font-size: 0.875rem;
+  font-family: "Argentum Sans Regular", sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+  letter-spacing: 5px;
 }
 
 @mixin inputFocus {

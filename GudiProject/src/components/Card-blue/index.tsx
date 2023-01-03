@@ -6,21 +6,21 @@ interface IpropsCard {
   text:string;
 }
 
-const BenefitText = (props:IpropsCard) => {
+const CardBlue = (props:IpropsCard) => {
   const {img, title, text} = props;
   return (
     <div className={styles.container}>
-        <img className={styles.img} src="./public/img/couple.png" alt="" />
+        <img className={styles.img} src={img} alt="" />
     <div className={styles.Box_card_blue}>
       <div className={styles.Box_title}>
         <span className={styles.separator}></span>
         <p className={styles.travel_titlte}>Viagens Nacionais</p>
       </div>
       <div>
-        <h2 className={styles.title_lg}>O clima perfeito, no lugar perfeito</h2>
+        <h2 className={styles.title_lg}>{title}</h2>
       </div>
       <div>
-        <p className={styles.travel_text}>Planeje sua viagem com a sua paquera, compartilhar momentos preciosos juntos não tem preço.</p>
+        <p className={styles.travel_text}>{text}</p>
       </div>
       <div>
         <button className={styles.btn}>Agendar</button>
@@ -30,4 +30,4 @@ const BenefitText = (props:IpropsCard) => {
   );
 };
 
-export default BenefitText;
+export default CardBlue;

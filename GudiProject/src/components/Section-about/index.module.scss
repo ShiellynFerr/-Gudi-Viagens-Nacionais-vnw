@@ -1,0 +1,15 @@
+@import '../../styles/global.scss';
+
+.section_about {
+  display: flex;
+  flex-direction: column;
+  background: $bg-gradient-blue;
+  height: 100%;
+
+  .states {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-color: red;
+  }
+}

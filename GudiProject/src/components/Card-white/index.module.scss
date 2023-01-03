@@ -1,0 +1,109 @@
+@import "../../styles/global.scss";
+
+.container {
+  display: flex;
+  flex-direction: row-reverse;
+
+  .img {
+    width: 50%;
+    height: 380px;
+    @media (max-width: 900px) {
+      width: 100%;
+    }
+    @media (max-width: 900px) {
+      width: 100%;
+      height: 300px;
+    }
+    @media (max-width: 600px) {
+      width: 100%;
+      height: 250px;
+    }
+  }
+
+  @media (max-width: 900px) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.Box_card_white {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 0px 80px;
+  width: 50%;
+  height: 380px;
+  gap: $gap-md;
+  background: $color-white;
+
+  .Box_title {
+    display: flex;
+    align-items: center;
+    gap: $gap-sm;
+    text-align: left;
+  }
+
+  .separator {
+    content: "";
+    width: 37px;
+    height: 2px;
+    border: 1px solid $color-blue-ligth;
+  }
+
+  .travel_titlte {
+    @include title-extra-small($color-blue-ligth);
+  }
+
+  .title_lg {
+    @include title-large(l, $color-blue-ligth);
+    width: 360px;
+    @media (max-width: 400px) {
+      @include title-large(s, $color-blue-ligth);
+    }
+    @media (max-width: 364px) {
+      width: 200px;
+      @include title-large(xs, $color-blue-ligth);
+    }
+  }
+
+  .travel_text {
+    @include text-small($color-blue-ligth);
+    width: 400px;
+    @media (max-width: 400px) {
+      @include text-extra-small($color-blue-ligth);
+    }
+    @media (max-width: 364px) {
+      width: 280px;
+    }
+
+    .bold {
+      font-family: "Argentum Sans ExtraBold", sans-serif;
+      font-weight: bold;
+    }
+  }
+
+  .btn {
+    margin-top: 8px;
+    @include buttonHome(
+      $bg-transparent,
+      $color-blue-ligth,
+      1px solid $color-blue-ligth,
+      "Argentum Sans" sans-serif,
+      normal
+    );
+  }
+  @media (max-width: 500px) {
+    padding: 0px 20px;
+  }
+  @media (max-width: 400px) {
+    padding: 0px 10px;
+  }
+
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+  @media (max-width: 900px) {
+    width: 100%;
+  }
+}

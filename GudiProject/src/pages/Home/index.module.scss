@@ -10,14 +10,13 @@
   background-image: url("./public/img/kombi.png");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 
   @media (max-width: 600px) {
-   height: 400px;
+    height: 400px;
   }
   @media (max-width: 400px) {
     height: 380px;
-   }
+  }
 
   .content {
     width: 400px;
@@ -65,7 +64,16 @@
   }
 }
 
-//Mixin
+.section_about {
+  display: flex;
+  flex-direction: column;
+  background: $bg-gradient-blue;
+  height: 100%;
 
-@mixin breakpoint($size) {
+  .states {
+    display: flex;
+    height: 250px;
+    width: 100%;
+    background-color: red;
+  }
 }
