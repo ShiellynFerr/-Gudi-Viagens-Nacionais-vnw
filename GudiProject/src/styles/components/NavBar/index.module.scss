@@ -3,8 +3,6 @@
 .header {
   height: $header-height;
   background-color: $color-white;
-  position: fixed;
-  z-index: 1000;
   width: 100%;
   @include text-extra-small($color-blue-ligth);
   padding: 0 $spacing-md;
@@ -30,6 +28,7 @@
     @include device(s) {
       width: 50%;
       margin-right: 80px;
+      padding-bottom: 100px;
     }
     @include device(xs) {
       display: flex;
@@ -47,6 +46,14 @@
 
     .nav_item {
       @include text-extra-small($color-blue-ligth);
+    }
+  }
+
+  button {
+    @include buttonHome($bg-gradient-btn, $color-white, none, bold);
+    @include device(s) {
+      height: 20px;
+      font-size: 7px;
     }
   }
   @include device(xs) {

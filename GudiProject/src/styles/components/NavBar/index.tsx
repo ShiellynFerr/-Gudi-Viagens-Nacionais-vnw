@@ -14,7 +14,7 @@ const NavBar = () => {
                <a className={styles.nav_item}  href="#">Contato</a>
             </nav>
             <div>
-            <Button textButton="Agendar" />
+           <button>Agendar</button>
           </div>
           </div>
     </div>
