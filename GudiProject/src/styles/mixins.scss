@@ -1,5 +1,27 @@
 @import "./variable.scss";
 
+//Breakpoints
+@mixin device($size) {
+  @if $size == l {
+    @media screen and (min-width: #{$large-device}) {
+      @content;
+    }
+  } @else if $size == m {
+    @media screen and (min-width: #{$midle-device}) and (max-width: #{$large-device - 1}) {
+      @content;
+    }
+  } @else if $size == s {
+    @media screen and (max-width: #{$midle-device - 1}) {
+      @content;
+    }
+  } @else if $size == xs {
+    @media screen and (min-width: #{$xs-small-device}) and (max-width: #{$small-device - 1}) {
+      @content;
+    }
+  }
+}
+
+
 @mixin title-large {
   font-size: 2.188;
   font-weight: bold;
@@ -49,13 +71,10 @@
   letter-spacing: 3px;
   cursor: pointer;
   @include buttonText;
-}
-
-//Breakpoints
-@mixin breakpoint($point) {
-  @if $point == md {
-    @media (min-width: $md) {
-      @content;
-    }
+  @include device(xs) {
+    width: 80px;
+    height: 30px;
+    font-size: 0.438rem;
   }
 }
+
