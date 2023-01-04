@@ -1,6 +1,4 @@
 import Button from "../../components/Button-home";
-import CardBlue from "../../components/Card-blue";
-import CardWhite from "../../components/Card-white";
 import Contact from "../../components/contact";
 import ImageHover from "../../components/ImageHover";
 import SectionAbout from "../../components/Section-about";
@@ -28,7 +26,7 @@ const Home = () => {
       <SectionAbout />
       <ImageHover />
       <SectionBenefit />
-        <Contact />
+      <Contact />
     </div>
   );
 };

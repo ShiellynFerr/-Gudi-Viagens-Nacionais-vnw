@@ -15,7 +15,8 @@ const CardWhite = () => {
         <div>
           <p className={styles.travel_text}>
             Rachando a conta ou rachando o bico, a melhor hora pra curtir é
-            entre amigos. Conheça nossos <span className={styles.bold}>Planos Multi.</span> 
+            entre amigos. Conheça nossos{" "}
+            <span className={styles.bold}>Planos Multi.</span>
           </p>
         </div>
         <div>

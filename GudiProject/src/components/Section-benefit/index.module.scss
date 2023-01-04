@@ -16,7 +16,7 @@
       width: 300px;
       @include title-midle($color-grey-text-1);
 
-      @media (max-width:300px) {
+      @media (max-width: 300px) {
         @include title-small($color-grey-text-1);
       }
     }
@@ -33,7 +33,7 @@
     gap: $gap-sm;
 
     figure {
-      margin-bottom: 10px; 
+      margin-bottom: 10px;
       @media (max-width: 660px) {
         margin-bottom: 0px;
       }
@@ -109,7 +109,7 @@
     }
     .title_city {
       width: 120px;
-      @media (max-width:660px) {
+      @media (max-width: 660px) {
         margin-left: 10px;
       }
     }
@@ -120,9 +120,8 @@
     @media (max-width: 660px) {
       @include boxInfo-md($color-blue-ligth);
     }
-    
   }
-  @media (max-width:660px) {
+  @media (max-width: 660px) {
     gap: 3px;
     @include text-extra-small($color-white);
   }
@@ -131,6 +130,5 @@
     flex-direction: column;
     gap: 5px;
     padding: 10px;
-  
   }
 }

@@ -10,10 +10,10 @@
   .logo {
     width: 150px;
     height: 50px;
-    @media (max-width:$small-md-device) {
+    @media (max-width: $small-md-device) {
       width: 135px;
     }
-    @media (max-width:$xs-small-device) {
+    @media (max-width: $xs-small-device) {
       width: 120px;
     }
   }
@@ -29,31 +29,34 @@
     align-items: center;
     justify-content: space-around;
     width: 300px;
-    @media (max-width:$small-md-device) {
+    @media (max-width: $small-md-device) {
       width: 260px;
     }
-    @media(max-width:$xs-small-device) {
+    @media (max-width: $xs-small-device) {
       width: 220px;
     }
 
     .ul {
       @include flex(row, wrap, space-around, center);
       gap: 40px;
-      @media (max-width:$small-md-device) {
+      @media (max-width: $small-md-device) {
         gap: $gap-md;
       }
-      @media(max-width:$xs-small-device) {
+      @media (max-width: $xs-small-device) {
         gap: $gap-sm;
       }
     }
   }
   .nav_item {
-      @include text-small($color-blue-ligth);
-      font-weight: bold;
-      @media (max-width:$xs-small-device) {
-        @include text-extra-small($color-blue-ligth);
-      }
+    @include text-small($color-blue-ligth);
+    font-weight: bold;
+    @media (max-width: $xs-small-device) {
+      @include text-extra-small($color-blue-ligth);
     }
+    &:hover {
+      color: #005cd5be;
+    }
+  }
 
   .button {
     @include buttonHome(
@@ -63,15 +66,21 @@
       "Argentum Sans ExtraBold",
       bold
     );
-     @media (max-width:$xs-small-device) {
-      @include  button-small-device;
-     }
+    @media (max-width: $xs-small-device) {
+      @include button-small-device;
+    }
+    &:hover {
+      color: $color-blue-ligth;
+      background-color: $color-white;
+      box-shadow: 0 0 20px #6fc5ff50;
+      border: none;
+    }
   }
-  @media (max-width:$small-md-device) {
+  @media (max-width: $small-md-device) {
     height: 100px;
     padding: 0px 15px;
   }
-  @media(max-width:$xs-small-device) {
+  @media (max-width: $xs-small-device) {
     padding: 0 0;
   }
 }

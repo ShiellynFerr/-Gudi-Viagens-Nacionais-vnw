@@ -83,6 +83,11 @@
       "Argentum Sans" sans-serif,
       normal
     );
+    &:hover {
+      background-color: $color-blue-ligth;
+      box-shadow: 0 0 20px #6fc5ff50;
+      border: none;
+    }
   }
   @media (max-width: 500px) {
     padding: 0px 20px;
@@ -90,5 +95,4 @@
   @media (max-width: 400px) {
     padding: 0px 10px;
   }
-  
 }

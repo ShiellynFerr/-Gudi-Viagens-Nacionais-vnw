@@ -80,6 +80,8 @@
   border: $border;
   font-weight: $weight;
   letter-spacing: 3px;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
   cursor: pointer;
   @include buttonText;
   @include device(xs) {

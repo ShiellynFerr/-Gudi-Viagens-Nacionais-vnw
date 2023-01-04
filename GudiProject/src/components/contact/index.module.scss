@@ -33,15 +33,28 @@
     resize: none;
     color: $color-grey-ultraligth;
     transition: 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-      @include inputFocus;
+    @include inputFocus;
 
-      @media (max-width: 350px) {
-        width: 300px;
-      }
+    @media (max-width: 350px) {
+      width: 300px;
+    }
   }
 
   .btn {
     margin-top: 10px;
-    @include buttonHome($bg-transparent,$color-white, 1px solid $color-white,"Argentum Sans", normal)
+    @include buttonHome(
+      $bg-transparent,
+      $color-white,
+      1px solid $color-white,
+      "Argentum Sans",
+      normal
+    );
+
+    &:hover {
+      color: $color-blue-ligth;
+      background-color: $color-white;
+      box-shadow: 0 0 20px #6fc5ff50;
+      border: none;
+    }
   }
 }

@@ -6,7 +6,7 @@ $color-grey-text-2: #afb3b8;
 $color-grey-ultraligth: #eeeeee;
 $color-white: #fff;
 $bg-gradient-blue: transparent linear-gradient(190deg, #005bd5 0%, #002e6b 100%);
-$bg-gradient-btn:#005BD5 0% 0% no-repeat padding-box;
+$bg-gradient-btn: #005bd5 0% 0% no-repeat padding-box;
 $bg-transparent: transparent;
 
 // Heigth
@@ -29,9 +29,8 @@ $gap-md: 20px;
 $gap-lg: 35px;
 
 // Size Breakpoints
-$large-device:1200px;
-$midle-device:800px;
+$large-device: 1200px;
+$midle-device: 800px;
 $small-device: 784px;
-$small-md-device:390px;
-$xs-small-device:350px;
-
+$small-md-device: 390px;
+$xs-small-device: 350px;
