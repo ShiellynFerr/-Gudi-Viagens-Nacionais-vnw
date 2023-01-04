@@ -27,7 +27,6 @@ const Home = () => {
       <ImageHover />
       <SectionBenefit />
       <Contact />
-      <img src="./img/kombi.png" alt="" />
     </div>
   );
 };
