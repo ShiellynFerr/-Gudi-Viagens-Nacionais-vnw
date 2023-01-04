@@ -4,12 +4,12 @@
   width: 100%;
   height: $header-height;
   padding: 0 $spacing-md;
-  position: fixed;
-  z-index: 100;
   @include flex(row, wrap, space-between, center);
   @include text-extra-small($color-blue-ligth);
+  color: #fff;
   .logo {
     width: 150px;
+    height: 50px;
     @media (max-width:$small-md-device) {
       width: 135px;
     }
@@ -68,6 +68,7 @@
      }
   }
   @media (max-width:$small-md-device) {
+    height: 100px;
     padding: 0px 15px;
   }
   @media(max-width:$xs-small-device) {
