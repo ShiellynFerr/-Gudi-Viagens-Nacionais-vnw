@@ -3,36 +3,59 @@
 .header {
   width: 100%;
   height: $header-height;
-  background-color: $color-white;
-  @include text-extra-small($color-blue-ligth);
   padding: 0 $spacing-md;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   position: fixed;
   z-index: 100;
+  @include flex(row, wrap, space-between, center);
+  @include text-extra-small($color-blue-ligth);
   .logo {
     width: 150px;
+    @media (max-width:$small-md-device) {
+      width: 135px;
+    }
+    @media (max-width:$xs-small-device) {
+      width: 120px;
+    }
   }
   .box {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 30%;
     margin-right: $gap-md;
   }
 
   .nav {
     display: flex;
-    gap: $gap-lg;
-    margin-right: $gap-lg;
+    align-items: center;
+    justify-content: space-around;
+    width: 300px;
+    @media (max-width:$small-md-device) {
+      width: 260px;
+    }
+    @media(max-width:$xs-small-device) {
+      width: 220px;
+    }
 
-    .nav_item {
-      @include text-extra-small($color-blue-ligth);
+    .ul {
+      @include flex(row, wrap, space-around, center);
+      gap: 40px;
+      @media (max-width:$small-md-device) {
+        gap: $gap-md;
+      }
+      @media(max-width:$xs-small-device) {
+        gap: $gap-sm;
+      }
     }
   }
+  .nav_item {
+      @include text-small($color-blue-ligth);
+      font-weight: bold;
+      @media (max-width:$xs-small-device) {
+        @include text-extra-small($color-blue-ligth);
+      }
+    }
 
-  button {
+  .button {
     @include buttonHome(
       $bg-gradient-btn,
       $color-white,
@@ -40,5 +63,14 @@
       "Argentum Sans ExtraBold",
       bold
     );
+     @media (max-width:$xs-small-device) {
+      @include  button-small-device;
+     }
+  }
+  @media (max-width:$small-md-device) {
+    padding: 0px 15px;
+  }
+  @media(max-width:$xs-small-device) {
+    padding: 0 0;
   }
 }
