@@ -5,7 +5,7 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container_footer}>
       <div className={styles.Box_footer}>
-        <img src="./public/img/logo-footer.svg" alt="" />
+        <img src="./img/logo-footer.svg" alt="" />
         <a href="#">Sobre nós</a>
         <a href="#">Mural de memórias</a>
         <a href="#">Eventos Gudi</a>
