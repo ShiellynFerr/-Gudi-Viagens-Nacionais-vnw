@@ -3,7 +3,7 @@ import styles from "./index.module.scss";
 const CardWhite = () => {
   return (
     <div className={styles.container}>
-      <img className={styles.img} src="./public/img/friends.png" alt="" />
+      <img className={styles.img} src="./public/img/friends.png" alt="Amigos no alto de uma montanha" />
       <div className={styles.Box_card_white}>
         <div className={styles.Box_title}>
           <span className={styles.separator}></span>
