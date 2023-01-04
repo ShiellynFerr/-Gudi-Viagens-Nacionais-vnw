@@ -1,11 +1,10 @@
-import React from 'react'
 import styles from './index.module.scss';
 
-interface Iprops {
+interface IProps {
   textButton:string;
 }
 
-const Button = (props: Iprops) => {
+const Button = (props: IProps) => {
   const {textButton} = props;
   return (
     <button className={styles.button}>{textButton}</button>
