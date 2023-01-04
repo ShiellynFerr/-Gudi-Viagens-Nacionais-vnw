@@ -1,13 +1,7 @@
 import Input from '../Input-contact';
 import styles from './index.module.scss';
 
-interface IContactProps {
-  cols:number;
-  rows:number;
-}
-
-const Contact= (props:IContactProps) => {
-  const {cols, rows} = props;
+const Contact= () => {
   return (
     <section className={styles.container}>
        <div className={styles.Box_Contact}>

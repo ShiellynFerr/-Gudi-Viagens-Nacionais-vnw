@@ -1,8 +1,6 @@
 import Home from "./pages/Home";
 import NavBar from "./components/NavBar";
-import ImageHover from "./components/ImageHover";
-import SectionAbout from "./components/Section-about";
-import SectionBenefit from "./components/Section-benefit";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,9 +8,7 @@ function App() {
       <div className="App">
         <NavBar />
         <Home />
-        {/* <SectionAbout />
-         <ImageHover/>
-         <SectionBenefit /> */}
+        <Footer />
       </div>
     </>
   );
