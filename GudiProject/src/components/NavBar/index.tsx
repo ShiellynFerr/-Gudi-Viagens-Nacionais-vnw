@@ -6,7 +6,7 @@ const NavBar = () => {
       <div>
         <img
           className={styles.logo}
-          src="./public/img/logo-footer.svg"
+          src="./img/logo-footer.svg"
           alt="logo"
         />
       </div>
